@@ -1,0 +1,29 @@
+ <!--seccion navbar:BARRA DE TAREAS, bootstrap-->
+ <section id="barra-de-navegacion">
+
+
+ <section id="navbar" class="border">  <!--fixet-top es posicion fija-->
+    <nav class="navbar navbar-expand-sm bg-light fixed-top">   <!--todo lo que pegue son estilos propios de boostrap no los tenemos en nuestra hoja de estilos-->
+        
+
+          <a class="navbar-collapse" href="https://argentinaprograma.inti.gob.ar/" target="_blank"><img class="logoAp" src="./../../../assets/img/arg-prog.png" width="" height="40" alt="logo-argentina-prog"></a>
+         
+            <u class="list-group list-group-horizontal">
+                <li class="list-group-item"><a href="https://ar.linkedin.com/" title="linkedin" target="_blank"><i class="fa-brands fa-linkedin text-black"></i></a></li> <!--pegamos los iconos de fontawesome-->
+                <li class="list-group-item"><a href="https://github.com/" title="github" target="_blank"><i class="fa-brands fa-github text-black"></i></a></li>
+                <li class="list-group-item"><a href="https://codepen.io/" title="codepen" target="_blank"><i class="fa-brands fa-codepen text-black"></i></a></li>
+            </u>
+                
+            <div class="botones-login-logout">
+              <app-login></app-login>
+              <app-logout></app-logout>
+            </div>
+     
+    </nav>
+
+</section>
+ </section>
+
+ <app-modal-login></app-modal-login>
+
+

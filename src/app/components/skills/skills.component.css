@@ -1,0 +1,9 @@
+#skills{
+    position: relative;
+}
+
+.editar-skills{
+    position: absolute;
+    right: 1rem;
+    bottom: 16.5rem;
+}

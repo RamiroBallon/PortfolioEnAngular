@@ -1,0 +1,29 @@
+/*header sobre mi*/
+.nombrePerfil{
+    font-size: 40px;   /*rem:unidad relativa con respecto a la pagina em:con respecto al diseño*/
+    border-style: none;
+}
+
+.apellido{
+    color: black;
+}
+
+header{
+    border-color: none;
+}
+
+
+#sobremi{
+   padding-top: 0.5rem;
+   position: relative;
+}
+
+.parrafo-descripcion{
+    color: rgb(195, 204, 212);
+}
+
+.editar-sobreMi{
+    position: absolute;
+    right: 1rem;
+    bottom: 15.5rem;
+}

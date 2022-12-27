@@ -1,0 +1,14 @@
+ul li{   /*buscamos donde estan las redes y quitamos los puntito*/
+    list-style-type: none;
+    margin-left: 0%; /* estaba en -3,5% */
+}
+
+#educacion{
+    position: relative;
+}
+
+.editar-agregar-educacion{
+    position: absolute;
+    right: 1rem;
+    bottom: 18rem;
+}

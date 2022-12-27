@@ -1,0 +1,9 @@
+#experiencia{
+    position: relative;
+}
+
+.editar-experiencia{
+    position: absolute;
+    right: 1rem;
+    bottom: 7rem;
+}

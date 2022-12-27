@@ -1,0 +1,70 @@
+  <!--MODAL AGREGAR EXPERIENCIA-->
+  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-agregar-experiencia"> <!--debe coincidir con el id de los modales de abajo-->
+    <i class="fa-sharp fa-solid fa-plus"></i>
+  </button>
+
+
+<!--MODALES--> <!--cuadro de dialogo--> 
+    <!-- Modal Agregar --> <!-- el id="" estaremos llamando desde nuestro trigger o disparador con nuestro boton que tenemos-->
+    <div class="modal fade" id="modal-agregar-experiencia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          
+          <div class="modal-header"> <!--modal de encabezado-->
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton X de arriba a la derecha del modal-->
+          </div>
+
+          <div class="modal-body"> <!--cuerpo de modal-->
+          
+            <form>
+
+              <select class="form-select" id="experienciaId">
+                <option selected>Seleccionar Experiencia</option>
+                <option value="1">ID1</option>
+                <option value="2">ID2</option>
+                <option value="3">ID3</option>
+              </select>
+
+              <div class="mb-3"> <!--Titulo-->
+                <label for="Titulo" class="form-label">Titulo</label>
+                <input class="form-control" type="text" id="Titulo">
+              </div>
+
+            
+              <div class="mb-3"> <!--experiencia Url-->
+                <label for="experienciaUrl" class="form-label">Modificar Url</label>
+                <input class="form-control" type="url" id="experienciaUrl">
+              </div>
+
+              <div class="mb-3"> <!--Experiencia Img-->
+                <label for="experienciaImg" class="form-label">Modificar logo</label>
+                <input class="form-control" type="file" id="experienciaImg">
+              </div>
+
+
+              <div class="mb-3"> <!--fecha de inicio-->
+                <label for="PeriodoInicio" class="form-label">Modificar Peridodo Inicio</label>
+                <input type="date" class="form-control" id="PeriodoInicio">
+              </div>
+
+              <div class="mb-3"> <!--fecha de fin-->
+                <label for="PeriodoFin" class="form-label">Modificar Peridodo Fin</label>
+                <input type="date" class="form-control" id="PeriodoFin">
+              </div>
+  
+  
+              <div class="mb-3"> <!--descripcion-->
+                <label for="Descripcion" class="form-label">Descripcion</label> <!--LABEL ES ETIQUETA-->
+                <textarea class="form-control" id="Descripcion"> </textarea> <!--textarea es una entrada de texto largo-->
+              </div>
+  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button> <!--cerrar-->
+            <button type="submit" class="btn btn-primary">Ingresar</button> <!--ingresar-->
+          </div>
+        </form>
+      </div>
+        </div>
+      </div>
+    </div>

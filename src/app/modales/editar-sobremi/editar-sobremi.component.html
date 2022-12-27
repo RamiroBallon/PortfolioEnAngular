@@ -1,0 +1,48 @@
+<!--MODAL EDITAR SOBRE MI-->
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-editar-SobreMi"> <!--debe coincidir con el id de los modales de abajo-->
+    <!--en lugar de INGRESAR le pongo un icono de candado para probar-->
+    <i class="fa-solid fa-pen-to-square"></i>
+  </button>
+
+  
+<!--MODALES--> <!--cuadro de dialogo--> 
+    <!-- Modal Editar --> <!-- el id="" estaremos llamando desde nuestro trigger o disparador con nuestro boton que tenemos-->
+    <div class="modal fade" id="modal-editar-SobreMi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          
+          <div class="modal-header"> <!--modal de encabezado-->
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Editar</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton X de arriba a la derecha del modal-->
+          </div>
+
+          <div class="modal-body"> <!--cuerpo de modal-->
+          
+            <form>
+
+
+              <div class="mb-3"> <!--Titulo-->
+                <label for="Titulo" class="form-label">Titulo</label>
+                <input class="form-control" type="text" id="Titulo">
+              </div>
+
+  
+              <div class="mb-3"> <!--descripcion-->
+                <label for="Descripcion" class="form-label">Descripcion</label> <!--LABEL ES ETIQUETA-->
+                <textarea class="form-control" id="Descripcion"> </textarea> <!--textarea es una entrada de texto largo-->
+              </div>
+
+              <div class="mb-3"> <!-- Img Perfil-->
+                <label for="Img-perfil" class="form-label">Imagen Perfil</label>
+                <input class="form-control" type="file" id="Img-perfil">
+              </div>
+  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button> <!--cerrar-->
+            <button type="submit" class="btn btn-primary">Ingresar</button> <!--ingresar-->
+          </div>
+        </form>
+      </div>
+        </div>
+      </div>
+    </div>

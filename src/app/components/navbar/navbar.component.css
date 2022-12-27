@@ -1,0 +1,16 @@
+.navbar-collapse {
+    padding-left: 1rem;
+}
+
+.logoAp{
+    filter: invert();
+}
+
+#barra-de-navegacion{
+    position: relative;
+}
+
+nav{
+    position: none;
+}
+

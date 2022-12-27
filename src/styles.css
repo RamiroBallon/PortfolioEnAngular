@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* OJO   SON ESTILOS GLOBALES, MODIFICAN TODO*/
+
+body{
+    background-color: #f8af75; /*  backround es atributo rgb es el atributo */
+    color:black; /*color de fuente*/   
+}
+
+body h1, h2, h3, h4, h5{
+    padding-left: none;
+    text-align: center;
+}
+
+
+
+header{
+    background: rgb(63, 80, 79);
+    
+}
+
+footer{
+    background-color: rgb(63, 80, 79);
+    padding-top: 2rem;
+}
