@@ -1,3 +1,11 @@
+git init  iniciar un directorio como repositorio git
+git add .  pasar del working area al stating area
+git status en que estados estan los archivos
+git commit -m "comentario"  confirma todos los cambios registrados en en area de preparacion, se pasan los cambios al rep.local
+git push enviar todo del rep local al rep remoto
+git log para revisar el historial del repositorio
+
+
 
 en ------package.json:-------
 cuales son las dependencias que estan instaladas y cuales son las cosas que hay que correr para que funcione

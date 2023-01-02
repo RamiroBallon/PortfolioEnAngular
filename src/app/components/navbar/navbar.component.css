@@ -14,3 +14,18 @@ nav{
     position: none;
 }
 
+
+.barra-de-navegacion{
+    background-color: blue;
+    position: fixed;
+    top: 0;
+}
+
+u li{
+    border: 0;
+}
+
+
+
+
+

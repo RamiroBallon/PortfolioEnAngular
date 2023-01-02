@@ -3,8 +3,8 @@
 /* OJO   SON ESTILOS GLOBALES, MODIFICAN TODO*/
 
 body{
-    background-color: #f8af75; /*  backround es atributo rgb es el atributo */
-    color:black; /*color de fuente*/   
+    background-color: rgba(0, 0, 0, 0.566); /*  backround es atributo rgb es el atributo */
+    color: white; /*color de fuente*/   
 }
 
 body h1, h2, h3, h4, h5{
@@ -13,13 +13,11 @@ body h1, h2, h3, h4, h5{
 }
 
 
-
-header{
-    background: rgb(63, 80, 79);
-    
-}
-
 footer{
     background-color: rgb(63, 80, 79);
     padding-top: 2rem;
+}
+
+* , ::after, ::before {
+    box-sizing: border-box;
 }

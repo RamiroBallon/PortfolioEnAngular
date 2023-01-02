@@ -1,9 +1,29 @@
 #proyectos{
     position: relative;
+    
 }
 
 .editar-proyectos{
     position: absolute;
-    right: 1rem;
-    bottom: 8rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
+
+.row div{
+    text-align: center;  
+}
+
+.row{
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.proyectos{
+    color: black;
+}
+
+
+
+

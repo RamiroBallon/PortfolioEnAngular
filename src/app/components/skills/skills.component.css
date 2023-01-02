@@ -1,9 +1,27 @@
-#skills{
+#skills h2{
     position: relative;
 }
 
 .editar-skills{
     position: absolute;
-    right: 1rem;
-    bottom: 16.5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
+
+.row div{
+    text-align: center;  
+}
+
+.row{
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+
+

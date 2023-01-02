@@ -1,9 +1,32 @@
-#experiencia{
+#experiencia h2{
     position: relative;
 }
 
 .editar-experiencia{
     position: absolute;
-    right: 1rem;
-    bottom: 7rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.row div{
+    text-align: center;  
+}
+
+.row{
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.trabajos{
+    color: white;
+}
+
+.card {
+    background-color:   rgba(0, 0, 0, 0.566);
 }

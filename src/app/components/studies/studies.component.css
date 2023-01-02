@@ -3,12 +3,67 @@ ul li{   /*buscamos donde estan las redes y quitamos los puntito*/
     margin-left: 0%; /* estaba en -3,5% */
 }
 
-#educacion{
+#educacion h2{
     position: relative;
 }
 
 .editar-agregar-educacion{
     position: absolute;
-    right: 1rem;
-    bottom: 18rem;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.imagen-estudio1 img{
+    width: 150px;
+}
+
+.imagen-estudio2 img{
+    width: 210px;
+    border-radius: 2%;
+}
+
+.imagen-estudio3 img{
+    width: 120px;
+    border-radius: 50%;
+}
+
+.imagen-estudio1, .imagen-estudio2, .imagen-estudio3{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.row {
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+
+.n1{
+    padding-bottom: 3rem;
+}
+
+
+.fecha{
+   padding-left: 2.8rem;
+}
+
+li{
+    font-size: 25px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.d1{
+    padding-top: 3rem;
+}
+
+.imagen-estudio1{
+    filter: invert();
 }

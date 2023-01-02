@@ -24,6 +24,8 @@ import { AgregarSkillsComponent } from './modales/editar-skills/agregar-skills/a
 import { EditarProyectosComponent } from './modales/editar-proyectos/editar-proyectos.component';
 import { AgregarProyectosComponent } from './modales/editar-proyectos/agregar-proyectos/agregar-proyectos.component';
 import { EditarSobremiComponent } from './modales/editar-sobremi/editar-sobremi.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 
 @NgModule({
@@ -54,7 +56,8 @@ import { EditarSobremiComponent } from './modales/editar-sobremi/editar-sobremi.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterOutlet
+    RouterOutlet,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]

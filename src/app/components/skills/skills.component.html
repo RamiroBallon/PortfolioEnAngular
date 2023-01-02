@@ -1,22 +1,272 @@
 <!--seccion Habilidades blandas y-->
 <section id="skills">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm">
-        <h2>Habilidades/skills</h2>
-        <p>html5</p>
-        <p>css</p>
-        <p>botstrap</p>
-        <p>css</p>
-        <p>javascript</p>
-        <p>typescript</p>
-        <p>github</p>
+ 
+    
+  <div class="container">
 
-        <div class="editar-skills">
-          <app-agregar-skills></app-agregar-skills>
-          <app-editar-skills></app-editar-skills>
-        </div>
-      </div>
+    <div class="row titulo">
+      <h2>Habilidades/skills</h2>
+      <br>
+    <div class="editar-skills">
+      <app-agregar-skills></app-agregar-skills>
+      <app-editar-skills></app-editar-skills>
     </div>
   </div>
+
+    
+    <div class="row">
+      
+      <!--el valor de percent por ahora lo dejamos asi, despues tiene que tomar de base de datos se-->
+
+      <div class="col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="95"
+        [radius]="100"
+        [imageSrc]="'./../../../assets/img/HTML5_logo.png'"
+        [showImage]="true"
+        [imageHeight]="120"
+        [imageWidth]="120"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="5"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+  ></circle-progress>
+      </div>
+
+      <div class="col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="85"
+        [radius]="100"
+        [imageSrc]="'./../../../assets/img/CSS_logo2.png'"
+        [showImage]="true"
+        [imageHeight]="120"
+        [imageWidth]="130"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="5"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+  ></circle-progress>
+      </div>
+
+      <div class="col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="60"
+        [radius]="100"
+        [imageSrc]="'./../../../assets/img/JS_logo3.png'"
+        [showImage]="true"
+        [imageHeight]="140"
+        [imageWidth]="140"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="5"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+  ></circle-progress>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      
+      <div class="col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="90"
+        [radius]="100"
+        [imageSrc]="'./../../../assets/img/BOOTSTRAP_logo1.png'"
+        [showImage]="true"
+        [imageHeight]="90"
+        [imageWidth]="90"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="5"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+  ></circle-progress>
+      </div>
+
+      <div class="col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="40"
+        [radius]="100"
+        [imageSrc]="'./../../../assets/img/TS_logo.png'"
+        [showImage]="true"
+        [imageHeight]="95"
+        [imageWidth]="130"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="5"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+  ></circle-progress>
+      </div>
+
+      <div class="col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="80"
+        [radius]="100"
+        [imageSrc]="'./../../../assets/img/ANGULAR_logo.png'"
+        [showImage]="true"
+        [imageHeight]="120"
+        [imageWidth]="100"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="5"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+  ></circle-progress>
+      </div>
+      
+
+
+
+    </div>
+
+    <div class="row">
+      
+      <div class="col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="70"
+        [radius]="100"
+        [imageSrc]="'./../../../assets/img/GITHUB_logo1.png'"
+        [showImage]="true"
+        [imageHeight]="110"
+        [imageWidth]="110"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="5"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+  ></circle-progress>
+      </div>
+
+      <div class="col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="30"
+        [radius]="100"
+        [imageSrc]="'./../../../assets/img/JAVA_logo.png'"
+        [showImage]="true"
+        [imageHeight]="160"
+        [imageWidth]="160"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="5"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+  ></circle-progress>
+      </div>
+
+      <div class="col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="50"
+        [radius]="100"
+        [imageSrc]="'./../../../assets/img/NODEJS_logo.png'"
+        [showImage]="true"
+        [imageHeight]="140"
+        [imageWidth]="140"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="5"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+  ></circle-progress>
+      </div>
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="100"
+        [radius]="100"
+        [imageSrc]="'./../../../assets/img/TEAMWORK_logo5.png'"
+        [showImage]="true"
+        [imageHeight]="120"
+        [imageWidth]="110"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="5"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+  ></circle-progress>
+      </div>
+
+      <div class="col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="95"
+        [radius]="100"
+        [imageSrc]="'./../../../assets/img/SCRUM_logo1.png'"
+        [showImage]="true"
+        [imageHeight]="120"
+        [imageWidth]="130"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="5"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+  ></circle-progress>
+      </div>
+
+      <div class="col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="55"
+        [radius]="100"
+        [imageSrc]="'./../../../assets/img/SPEAKENGLISH_logo.png'"
+        [showImage]="true"
+        [imageHeight]="90"
+        [imageWidth]="110"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="5"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+  ></circle-progress>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
 </section>

@@ -110,3 +110,13 @@ button{
     font-weight: 500;
 
 }
+
+.contacto input ::placeholder{
+    color: white;
+}
+
+.contactar{
+    background-color: #212121;
+    padding-bottom: 8rem;
+    padding-top: 2rem;
+}
