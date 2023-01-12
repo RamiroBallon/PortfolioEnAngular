@@ -17,13 +17,22 @@ nav{
 
 .barra-de-navegacion{
     background-color: blue;
-    position: fixed;
+    position: fixe;
     top: 0;
 }
 
 u li{
     border: 0;
 }
+
+.navbar-redes ul li{
+    border: none;
+    padding: 10px;
+    background-color: #F8F9FA;
+}
+
+
+
 
 
 

@@ -80,14 +80,13 @@ textarea{
     position: relative;
     top: 0.5rem;
     width: 40%;
+    height: 100px;
 }
 
 button{
     border: none;
     border-radius: 4px;
-    height: 30px;    
-    
-    color: gray;
+    color:gray;
     
 }
 

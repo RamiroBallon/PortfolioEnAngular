@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HttpClientModule } from '@angular/common/http';
 
 import { RouterOutlet } from '@angular/router';
+
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -24,7 +27,8 @@ import { AgregarSkillsComponent } from './modales/editar-skills/agregar-skills/a
 import { EditarProyectosComponent } from './modales/editar-proyectos/editar-proyectos.component';
 import { AgregarProyectosComponent } from './modales/editar-proyectos/agregar-proyectos/agregar-proyectos.component';
 import { EditarSobremiComponent } from './modales/editar-sobremi/editar-sobremi.component';
-import { NgCircleProgressModule } from 'ng-circle-progress';
+import { Error404Component } from './components/error404/error404.component';
+
 
 
 
@@ -51,13 +55,15 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     EditarProyectosComponent,
     AgregarProyectosComponent,
     EditarSobremiComponent,
+    Error404Component,
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterOutlet,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

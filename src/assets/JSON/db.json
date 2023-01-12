@@ -1,0 +1,36 @@
+{
+"nombre": "Ramiro Jhafet",
+"apellido": "Ballon Rios",
+"edad": 22,
+
+"estudios": [
+    {
+        "id":1,
+        "tiulo": "Tecnico en Administración de Empresas",
+        "institucion": "Escuela tecnica n°7 Dolores Lavalle De Lavalle",
+        "inicio": 2013,
+        "fin": 2018,
+        "descripcion": "lorem"
+    },
+    {
+        "id":2,
+        "tiulo": "Arquitecto",
+        "institucion": "Facultad de Arquitectura, Diseño y Urbanismo - UBA",
+        "inicio": 2019,
+        "fin": "actualidad",
+        "descripcion": "lorem"
+    },
+    {
+        "id":3,
+        "tiulo": "Fullstack Developer Jr",
+        "institucion": "Argentina Programa - INTI - CESSI",
+        "inicio": 2022,
+        "fin": 2023,
+        "descripcion": "lorem"
+    }
+]
+
+
+
+
+}
