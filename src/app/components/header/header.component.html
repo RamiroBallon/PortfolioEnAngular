@@ -1,23 +1,26 @@
 <!--seccion sobre mi-->
 
 <header>  
-  <section id="sobremi" class="">
-    <div class="container-fluid">
+  <section id="sobremi">
+    <div class="container-fluid" *ngFor="let sobre of sobremis">
       <div class="row">
+
         <div class="banner col-sm-12">
-          
           <img
-            src="./../../../assets/img/BANNER2-5.png"
+            [src]="sobre.imagenBanner"
             alt="custom-banner"
             class="img-fluid"
-          /> 
-          <h2 class="bienvenido-typing">Hola, bienvenido a mi portfolio</h2>
+          />
+          <div class="banner-bienvenido" *ngFor="let sobre of sobremis"> 
+            <h2 class="bienvenido-typing">{{sobre.tituloBienvenido}}</h2>
+          </div>
         </div>
+        
       </div>
     </div>
 
 
-    <div class="container">
+    <div class="container-fluid" *ngFor="let sobre of sobremis">
  
 <div class="sobre-mi">
 
@@ -25,43 +28,39 @@
 
 
         <!--   ---------COLUMNA 1-------   FOTO, NOMBRE Y ESPECIALIDAD-->
-        <div class="col-md-5 text-center position-relative columna1">
+        <div class="col-lg-5 col-md-6 text-center position-relative columna1">
 
           <div class="imagen-de-perfi">
             <!--foto de perfil-->
-            <a href="https://github.com/RamiroBallon" target="_blank">
+            <a [href]="sobre.link" target="_blank">
               <!--a es para redirigir a paginas-->
-              <img src="./../../../assets/img/img-perfil-ejemplo.png" class="img-fluid position-absolute translate-middle" alt="muestra-texto-en-caso-de-no-haber-imagen" title="Ramiro Ballon Rios"
+              <img [src]="sobre.fotoPerfil" class="img-fluid position-absolute translate-middle" alt="muestra-texto-en-caso-de-no-haber-imagen" title="Ramiro Ballon Rios"
               />
             </a>
           </div>
 
           <!--nombre-->
-          <h1 class="nombrePerfil">
-            Ramiro <span class="apellido">Ballon Rios</span> <!--span es un elemento neutro-->
+          <h1 class="nombrePerfil">{{sobre.nombre}}<span class="apellido">{{sobre.apellido}}</span> <!--span es un elemento neutro-->
           </h1>
           <!--especialidad-->
           <div class="especialidad text-white">
-            <h4>Full Stack Developer Jr.</h4>
+            <h4><b>{{sobre.tituloEspecialidad}}</b></h4>
           </div>
         </div>
 
         
         <!--    ---------COLUMNA 2----------- SOBRE MI Y DESCRIPCION-->
-        <div class="col-md-7 columna2">
+        <div class="col-lg-7 col-md-6 columna2">
           
             <div class="titulo">
-              <h2 class="mt-0 pb-0">SOBRE MI</h2>
+              <h2 class="mt-0 pb-0">{{sobre.tituloSobremi}}</h2>
             </div>
             
             <div class="parrafo-descripcion">
             <p>
-              Soy un developer especializado en el desarrollo de aplicaciones
-              web del lado del cliente (Front-end)
+              {{sobre.descripcion}}
               <!-- <br />Con conocimientos en Backend y Base de datos. -->
-              <br />Continuamente aprendiendo y adquiriendo nuevas habilidades
-              tecnológicas en el campo del diseño y desarrollo de aplicaciones
-              web en general.
+              <br />{{sobre.descripcion1}}
             </p>
           </div>
 

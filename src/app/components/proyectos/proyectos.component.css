@@ -20,8 +20,34 @@
     padding-bottom: 3rem;
 }
 
-.proyectos{
-    color: black;
+.descripcion-proyectos{
+    color: rgb(239, 239, 239);
+}
+
+.descripcion-proyecto{
+    text-align: left;  
+    text-align: justify;
+    margin: 0% auto;
+}
+
+.imagen-proyecto {
+    max-width: 260px;
+}
+
+.columnita {
+    max-width: 374px;
+}
+
+.card{
+    background-color: rgba(137, 133, 133, 0.731);
+}
+
+@media (max-width:991px){
+    .imagen-proyecto{
+        padding-top: 20px;
+    }
+
+
 }
 
 

@@ -59,7 +59,7 @@ aside.redes-contacto ul li{
     align-items: none;
 }
 
-input {
+.contacto input {
     padding-right: none;
     background: transparent;
     border: none;
@@ -118,4 +118,13 @@ button{
     background-color: #212121;
     padding-bottom: 8rem;
     padding-top: 2rem;
+}
+
+@media (max-width:800px){
+        .contacto input{
+            width: 70%;
+        }
+        textarea{
+            width: 70%;
+        }
 }

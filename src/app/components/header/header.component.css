@@ -1,15 +1,17 @@
 /*header sobre mi*/
 
+
 header{
     background: rgb(63, 80, 79);
         margin:0 auto;
+        padding: 0 auto;
         width: 100%;
 }
 
 /*estilo general de toda la SECCION*/
 
 #sobremi{
-    padding-top: 1rem;
+    padding-top: 1rem; /*paddindg entre navbar y banner*/
     padding-bottom: 0rem;
     position: relative;
  }
@@ -38,6 +40,7 @@ color: black;
 
 .apellido{
     color: black;
+    margin-left: 10px;
 }
 
 /*columna 2  SOBRE MI Y DESCRIPCION*/
@@ -48,15 +51,33 @@ color: black;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    background-color: rgba(0, 0, 0, 0.145);
+    border-radius: 1%; 
+    margin-top: 2rem;
+    max-width: 700px; 
 }
 
 .parrafo-descripcion p{
     color: rgb(195, 204, 212);
     text-align: justify;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding-right: 8%;
+    padding-left: 8%;
     font-size: 19px;
+    background-color: rgba(0, 0, 0, 0.145);
+    padding-top: 3%;
+    padding-bottom: 1.5rem;
+}
+
+.sobre-mi{
+    padding-left: 5%;
+    padding-right: 8%;
+}
+
+@media (max-width:824px){
+    .sobre-mi{
+        padding-left: 1%;
+        padding-right: 1%;
+    }  
 }
 
 
@@ -81,18 +102,18 @@ color: black;
 
 .columna1 img{
     width: 300px;
+    max-width: 300px;
+    max-height: 300px;
     overflow: hidden;
     float: left;
     padding-top: 0%;
     border-radius: 50%;
-    border: 1px double black;
+    border: 1px double rgba(137, 133, 133, 0.731);
+    /**box-shadow: 0 0 0 8px rgba(0, 0, 0, .06); **/
 
-    
-        
-        top:0px;
-        max-width:100%;
-       /* z-index:1000000  Exagero el valor de z-index porque no se que z-index tengas puesto en el resto de tu css*/
-     
+    top:0px;
+    max-width:100%;
+       /* z-index:1000000  Exagero el valor de z-index porque no se que z-index tengas puesto en el resto de tu css*/    
 }
 
 
@@ -107,16 +128,9 @@ color: black;
 }
 
 .columna1 h1{
-    padding-top: 130px;
+    padding-top: 150px;
     text-align: center;
     align-items: center;
-}
-
-
-.banner img{
-    max-width: 100%;
-    width: 100%;
-    height: 350px;
 }
 
 .row{
@@ -136,8 +150,9 @@ padding-bottom: 5rem;
 }
 
 .columna2 h2{
+    /**color: aqua;**/
     color: aqua;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 * , ::after, ::before {
@@ -152,22 +167,51 @@ header{
     position: absolute;
 }
 
+
+
 .banner{
+    margin: 0;
+    max-width: 100%;
     position: relative;
-    height: 50vh;
+    max-height: 50vh;
+    min-height: 30vh;
     padding: 0 !important;
+    background-color: rgba(0, 0, 0, 0.663);
+    padding-bottom: 0 auto;
 }
 
-.banner h2{
+.banner h2, .banner-bienvenido h2{
     position: relative;
-    bottom: 16rem;
+    bottom: 14rem;
     -webkit-text-stroke-width: 1px;
     background-color: rgb(0, 0, 0, 0.3);
     width: none;
     margin: 0px auto;
 }
-.banner h2:hover{
-    color: black;
+
+.banner img{
+    margin: 0;
+    max-width: 100%;
+    max-height: 50vh;
+    width: 100%;
+    min-height: 30vh;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 0 auto;
+}
+
+/**.banner{
+    max-width: 100%;
+    width: 100%;
+    background-image: url("../../../assets/img/BANNER2-6.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}**/
+
+.banner h2:hover, .banner-bienvenido h2:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .bienvenido-typing{
@@ -191,22 +235,63 @@ header{
     }
 }
 
+
 @media (max-width:450px){
-    .banner h2{
+    .banner h2, .banner-bienvenido h2{
         font-size: 140%;
     }
 }
 
 
 @media (max-width:500px){
-    .banner{
-        height: 40vh;
-        padding: 0 !important;
-    }
-    .banner h2{
-        position: relative;
-        bottom: 17rem;
+    .sobre-mi{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
+
+@media (min-width:1370px){
+    .banner-bienvenido h2{
+        bottom: 18rem;
+    }
+}
+
+@media (max-width:1068px){
+    .banner-bienvenido h2{
+        bottom: 12rem;
+    }
+}
+
+@media (max-width:990px){
+    .banner-bienvenido h2{
+        bottom: 13rem;
+    }
+}
+
+@media (max-width:700px){
+    .banner-bienvenido h2{
+        bottom: 10rem;
+    }
+}
+
+@media (max-width:690px){
+    .banner-bienvenido h2{
+        bottom: 12rem;
+    }
+}
+
+@media (max-width:376px){
+    .banner-bienvenido h2{
+        bottom: 9.5rem;
+    }
+}
+
+
+
+
+
+
+
+
 
 

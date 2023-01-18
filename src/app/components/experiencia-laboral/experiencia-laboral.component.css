@@ -9,12 +9,49 @@
     align-items: center;
 }
 
-.row div{
-    text-align: center;  
+.fecha-trabajo{
+    text-align: center;
 }
 
+.descripcion-trabajo{
+    text-align: left;  
+    text-align: justify;
+    margin: 0% auto;
+}
+
+.imagen-trabajo {
+    max-width: 260px;
+    }
+
+@media (max-width:991px){
+    .row {
+        text-align: center;
+    }
+    .columnitas{
+        max-width: 374px;
+    }
+    .imagen-trabajo{
+        padding-top: 20px;
+        max-width: 200px;
+    }
+
+
+}
+
+
+/**@media (max-width:767px){
+    .tarjeta{
+        max-width: 400px;
+    }
+    .imagen-trabajo{
+        max-width: 250px;
+    }
+}**/
+
+
+
 .row{
-    align-items: center;
+    /**align-items: center;**/
     justify-content: center;
 }
 
@@ -23,10 +60,12 @@ h2{
     padding-bottom: 2rem;
 }
 
-.trabajos{
+.descripcion-tarjeta{
     color: white;
 }
 
 .card {
     background-color:   rgba(0, 0, 0, 0.566);
 }
+
+

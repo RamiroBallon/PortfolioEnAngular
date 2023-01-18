@@ -15,7 +15,8 @@ ul li{   /*buscamos donde estan las redes y quitamos los puntito*/
 }
 
 .imagen-estudio1 img{
-    width: 150px;
+    max-width: 150px;
+    max-height: 120px;
 }
 
 .imagen-estudio2 img{
@@ -52,10 +53,12 @@ ul li{   /*buscamos donde estan las redes y quitamos los puntito*/
    padding-left: 2.8rem;
 }
 
+/*li=titulos*/
 li{
     font-size: 25px;
 }
 
+/*p=Instituciones*/
 p{
     font-size: 18px;
 }
@@ -64,6 +67,11 @@ p{
     padding-top: 3rem;
 }
 
-.imagen-estudio1{
+/**.imagen-estudio1{
     filter: invert();
+}  **/
+
+.descripcion{
+    font-size: 15px;
+    text-align: justify;
 }

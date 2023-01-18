@@ -11,23 +11,33 @@
   </div>
 
     <div class="row">
-      <div class="col-sm">
+      <div class="col-sm-12">
 
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 descripcion-tarjeta" >
       
-        <div class="row g-4 trabajos">
-      
-          <div class="col-md-3">
+          <div class="col columnitas" *ngFor="let exp of experiencias">
             <div class="card">
-              <a href="" target="_blank"> 
-                <img src="https://picsum.photos/400" class="card-img-top" alt="..." class="img-fluid">
+              <!--url de la empresa-->
+              <a [href]="exp.link" target="_blank"> 
+                <!--imagen/logo de la empresa-->
+                <img [src]="exp.logoEmpresa" class="card-img-top" alt="..." class="img-fluid card-img imagen-trabajo">
               </a>
-              <div class="card-body">
-                <h5 class="card-title">Experiencia 1</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="card-body cuerpo-card">
+                <!--titulo/puesto-->
+                <h5 class="card-title">{{exp.puesto}}</h5>
+                <!--inicio y fin-->
+                <p class="card-text fecha-trabajo">{{exp.inicio}} - {{exp.fin}}</p>
+                <!--descripcion del puesto-->
+                <p class="card-text descripcion-trabajo">{{exp.descripcionParrafo1}} </p>
+                <p class="card-text descripcion-trabajo">{{exp.descripcionParrafo2}}</p>
+                <p class="card-text descripcion-trabajo">{{exp.descripcionParrafo3}}</p>
+                <p class="card-text descripcion-trabajo">{{exp.descripcionParrafo4}}</p>
               </div>
               </div>
           </div>
     
+
+          <!--
           <div class="col-md-3">
             <div class="card">
               <a href="" target="_blank">
@@ -38,8 +48,7 @@
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
               </div>
-          </div>
-    
+          </div>   
           <div class="col-md-3">
             <div class="card">
               <a href="" target="_blank">
@@ -51,7 +60,6 @@
               </div>
               </div>
           </div>
-    
           <div class="col-md-3">
             <div class="card">
               <a href="" target="_blank">
@@ -63,14 +71,9 @@
               </div>
               </div>
           </div>
-    
+        -->
           
         </div>
-
-
-
-
-
 
       </div>
     </div>

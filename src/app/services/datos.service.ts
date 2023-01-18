@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-//inscribirse a los datos y que reciba respuesta asincrona
+//suscribirse a los datos y que reciba respuesta asincrona
 import { Observable } from 'rxjs';
 //Hacer peticiones y CRUD
 import { HttpClient } from '@angular/common/http';
@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DatosService {
-//http = alias
+//datosJson = alias
   constructor(private datosJson:HttpClient) { }
 
   //metodo Observable que devuelve datos

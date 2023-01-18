@@ -1,6 +1,6 @@
 <!--seccion educacion-->
 <section id="educacion">
-  <div class="container">
+  <div class="container-fluid" >
 
   <div class="row d1">
     <h2>Educacion</h2>
@@ -14,23 +14,23 @@
     <br>
 
 
-    <div class="row n1">
+    <div class="row n1" *ngFor="let estudio of estudios">
 
-      <div class="col-md-2 imagen-estudio1">
-        <img src="./../../../assets/img/arg-prog.png" alt="" class="">
+      <div class="col-lg-3 col-md-3 imagen-estudio1">
+        <img [src]="estudio.imagen" alt="" class="img-fluid">
       </div>
-      <div class="col-sm-5">
+      <div class="col-lg-6 col-md-6 col-sm-8">
         <article>
           <ul>
-            <li><strong>Fullstack Developer Jr</strong></li>
-            <p>Argentina Programa - INTI - CESSI</p>
+            <li><strong>{{estudio.titulo}}</strong></li>
+            <p>{{estudio.institucion}}</p>
           </ul>
         </article>
     </div>
 
-    <div class="col-sm-5 fecha">
+    <div class="col-lg-3 col-md-3 col-sm-4 fecha">
       <article>
-          <p>2022 - 2023</p>
+          <p>{{estudio.inicio}} - {{estudio.fin}}</p>
       </article>
   </div>
 
@@ -38,7 +38,8 @@
 
 <br>
 
-    <div class="row n1">  
+
+   <!-- <div class="row n1">  
 
       <div class="col-md-2 imagen-estudio2">
         <img src="./../../../assets/img/ESTUDIOS-UBA.png" alt="" class="img-fluid">
@@ -48,7 +49,7 @@
           <ul>
           <li><strong>Arquitecto</strong></li>
           <p>Facultad de Arquitectura, Diseño y Urbanismo - UBA</p>
-          <p></p>
+          <p class="descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ut, labore qui atque, quia maxime quas harum dolore consequuntur officia veritatis tempore natus minus unde, cupiditate eveniet. Sunt, et pariatur!</p>
         </ul>
         </article>
     </div>
@@ -80,11 +81,11 @@
 
       <div class="col-sm-5 fecha">
         <article>
-            <p>2012 - 2018</p>
+            <p>2013 - 2018</p>
         </article>
     </div>
     
-    </div>
+    </div> -->
 
    
   </div>

@@ -11,20 +11,26 @@
       </div>
     </div>
 
-    <div class="row g-4 proyectos">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 descripcion-proyectos">
       
-      <div class="col-md-3">
+      <div class="col columnita" *ngFor="let project of projects">
         <div class="card">
-          <a href="" target="_blank">
-          <img src="https://picsum.photos/400" class="card-img-top" alt="..." class="img-fluid">
+          <a [href]="project.link" target="_blank">
+          <img [src]="project.imagen" class="card-img-top" alt="..." class="img-fluid card-img imagen-proyecto">
           </a>
           <div class="card-body">
-            <h5 class="card-title">Proyecto 1</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">{{project.titulo}}</h5>
+            <p class="card-text descripcion-proyecto">{{project.descripcionParrafo1}}</p>
+            <p class="card-text descripcion-proyecto">{{project.descripcionParrafo2}}</p>
+            <p class="card-text descripcion-proyecto">{{project.descripcionParrafo3}}</p>
+            <p class="card-text descripcion-proyecto">{{project.descripcionParrafo4}}</p>
           </div>
           </div>
       </div>
 
+
+
+<!--
       <div class="col-md-3">
         <div class="card">
           <a href="" target="_blank">
@@ -60,6 +66,8 @@
           </div>
           </div>
       </div>
+
+      -->
 
       
     </div>

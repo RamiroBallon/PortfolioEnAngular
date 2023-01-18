@@ -1,36 +1,227 @@
 {
-"nombre": "Ramiro Jhafet",
-"apellido": "Ballon Rios",
-"edad": 22,
-
-"estudios": [
+    "nombre": "Ramiro",
+    "apellido": "Ballon Rios",
+    "edad": 22,
+    "telefono": 1138172188,
+    "mail":"ramiroballonrios@gmail.com",
+    
+    "sobremi": [
+        {
+            "id":1,
+            "tituloBienvenido": "Hola, bienvenido a mi portfolio",
+            "imagenBanner":"../assets/img/BANNER2-8.png",
+            "nombre": "Ramiro",
+            "apellido": "Ballon Rios",
+            "tituloEspecialidad": "Full Stack Developer Jr.",
+            "fotoPerfil":"../assets/img/img-perfil-ejemplo1.png",
+            "link":"https://github.com/RamiroBallon",
+            "tituloSobremi": "SOBRE MI",
+            "descripcion": "Soy un developer especializado en el desarrollo de aplicaciones web del lado del cliente (Front-end)",
+            "descripcion1":"Continuamente aprendiendo y adquiriendo nuevas habilidades tecnológicas en el campo del diseño y desarrollo de aplicaciones web en general.",
+            "edad": 22
+        }
+    ],
+    
+    "experiencia": [
     {
         "id":1,
-        "tiulo": "Tecnico en Administración de Empresas",
-        "institucion": "Escuela tecnica n°7 Dolores Lavalle De Lavalle",
-        "inicio": 2013,
-        "fin": 2018,
-        "descripcion": "lorem"
+        "logoEmpresa": "../assets/img/mc donald.png",
+        "link": "",
+        "puesto": "Experiencia 1",
+        "inicio": "fecha de inicio",
+        "fin": "fecha de fin",
+        "descripcionParrafo1": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        "descripcionParrafo2": "",  
+        "descripcionParrafo3": "",
+        "descripcionParrafo4": ""
     },
     {
         "id":2,
-        "tiulo": "Arquitecto",
-        "institucion": "Facultad de Arquitectura, Diseño y Urbanismo - UBA",
-        "inicio": 2019,
-        "fin": "actualidad",
-        "descripcion": "lorem"
+        "logoEmpresa": "https://picsum.photos/500",
+        "link": "",
+        "puesto": "Experiencia 2",
+        "inicio": "fecha de inicio",
+        "fin": "fecha de fin",
+        "descripcionParrafo1": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        "descripcionParrafo2": "",  
+        "descripcionParrafo3": "",
+        "descripcionParrafo4": ""
     },
     {
         "id":3,
-        "tiulo": "Fullstack Developer Jr",
+        "logoEmpresa": "https://picsum.photos/300",
+        "link": "",
+        "puesto": " Experiencia 3",
+        "inicio": "fecha de inicio",
+        "fin": "fecha de fin",
+        "descripcionParrafo1": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        "descripcionParrafo2": "",  
+        "descripcionParrafo3": "",
+        "descripcionParrafo4": ""
+    },
+    {
+        "id":4,
+        "logoEmpresa": "https://picsum.photos/450",
+        "link": "",
+        "puesto": " Experiencia 4",
+        "inicio": "fecha de inicio",
+        "fin": "fecha de fin",
+        "descripcionParrafo1": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        "descripcionParrafo2": "",  
+        "descripcionParrafo3": "",
+        "descripcionParrafo4": ""
+    }
+
+],
+
+"skills": [
+    {
+        "id":1,
+        "logo": "../assets/img/HTML5_logo.png",
+        "porcentaje": 95   
+    },
+    {
+        "id":2,
+        "logo": "../assets/img/CSS_logo2.png",
+        "porcentaje": 85   
+    },
+    {
+        "id":3,
+        "logo": "assets/img/JS_logo3.png",
+        "porcentaje": 60   
+    },
+    {
+        "id":4,
+        "logo": "../assets/img/BOOTSTRAP_logo1.png",
+        "porcentaje": 90   
+    },
+    {
+        "id":8,
+        "logo": "../assets/img/JAVA_logo.png",
+        "porcentaje": 30  
+    },
+    {
+        "id":6,
+        "logo": "../assets/img/ANGULAR_logo.png",
+        "porcentaje": 80
+    },
+    {
+        "id":7,
+        "logo": "../assets/img/GITHUB_logo1.png",
+        "porcentaje": 70  
+    },
+     
+    {
+        "id":10,
+        "logo": "../assets/img/TEAMWORK_logo5.png",
+        "porcentaje": 100   
+    },
+   
+    {
+        "id":12,
+        "logo": "../assets/img/SPEAKENGLISH_logo.png",
+        "porcentaje": 55  
+    }
+],
+
+"educacion": [
+    {
+        "id":1,
+        "titulo": "Fullstack Developer Jr",
         "institucion": "Argentina Programa - INTI - CESSI",
         "inicio": 2022,
         "fin": 2023,
-        "descripcion": "lorem"
+        "descripcion": "lorem",
+        "imagen": "../assets/img/arg-prog.png"
+    },
+    {
+        "id":2,
+        "titulo": "Arquitecto",
+        "institucion": "Facultad de Arquitectura, Diseño y Urbanismo - UBA",
+        "inicio": 2019,
+        "fin": "actualidad",
+        "descripcion": "lorem",
+        "imagen": "../assets/img/ESTUDIOS-UBA.png"
+    },
+    {
+        "id":3,
+        "titulo": "Tecnico en Administración de Empresas",
+        "institucion": "Escuela tecnica n°7 - Dolores Lavalle De Lavalle",
+        "inicio": 2013,
+        "fin": 2018,
+        "descripcion": "lorem",
+        "imagen": "../assets/img/ESTUDIOS-ET7-1.png"
+    }
+],
+
+"proyectos": [
+    {
+        "id":1,
+        "titulo": "Proyecto 1",
+        "imagen":"https://picsum.photos/400",
+        "link": "",
+        "descripcionParrafo1": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", 
+        "descripcionParrafo2": "", 
+        "descripcionParrafo3": "", 
+        "descripcionParrafo4": ""
+    },
+    {
+        "id":2,
+        "titulo": "Proyecto 2",
+        "imagen":"https://picsum.photos/500",
+        "link": "",
+        "descripcionParrafo1": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", 
+        "descripcionParrafo2": "", 
+        "descripcionParrafo3": "", 
+        "descripcionParrafo4": ""
+    },
+    {
+        "id":3,
+        "titulo": "Proyecto 3",
+        "imagen":"https://picsum.photos/300",
+        "link": "",
+        "descripcionParrafo1": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", 
+        "descripcionParrafo2": "", 
+        "descripcionParrafo3": "", 
+        "descripcionParrafo4": ""
+    },
+    {
+        "id":4,
+        "titulo": "Proyecto 4",
+        "imagen":"https://picsum.photos/450",
+        "link": "",
+        "descripcionParrafo1": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", 
+        "descripcionParrafo2": "", 
+        "descripcionParrafo3": "", 
+        "descripcionParrafo4": ""
+    }
+],
+
+"contacto": [
+    {
+        "id":1,
+        "logoRedSocial":"fab fa-facebook-square",
+        "link":"https://www.facebook.com",
+        "title":"Facebook"
+    },
+    {
+        "id":2,
+        "logoRedSocial":"fab fa-instagram-square",
+        "link":"https://www.instagram.com",
+        "title":"Instagram"
+    },
+    {
+        "id":3,
+        "logoRedSocial":"fab fa-twitter-square",
+        "link":"https://www.twitter.com",
+        "title":"Twitter"
+    },
+    {
+        "id":4,
+        "logoRedSocial":"fab fa-pinterest-square",
+        "link":"https://ar.pinterest.com",
+        "title":"Pinterest"
     }
 ]
-
-
-
 
 }

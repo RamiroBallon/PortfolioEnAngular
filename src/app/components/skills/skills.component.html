@@ -5,7 +5,7 @@
   <div class="container">
 
     <div class="row titulo">
-      <h2>Habilidades/skills</h2>
+      <h2>Hard and Soft Skills</h2> <!--Habilidades-->
       <br>
     <div class="editar-skills">
       <app-agregar-skills></app-agregar-skills>
@@ -18,11 +18,11 @@
       
       <!--el valor de percent por ahora lo dejamos asi, despues tiene que tomar de base de datos se-->
 
-      <div class="col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="95"
+      <div class="col-md-4 col-lg-4" *ngFor="let skill of habilidades">
+        <circle-progress class="imagen-skill"
+        [percent]="skill.porcentaje"
         [radius]="100"
-        [imageSrc]="'./../../../assets/img/HTML5_logo.png'"
+        [imageSrc]="skill.logo"
         [showImage]="true"
         [imageHeight]="120"
         [imageWidth]="120"
@@ -36,7 +36,7 @@
         [animationDuration]="600"
   ></circle-progress>
       </div>
-
+<!--
       <div class="col-md-4 col-lg-4">
         <circle-progress
         [percent]="85"
@@ -74,10 +74,11 @@
         [animationDuration]="600"
   ></circle-progress>
       </div>
-
+-->
 
     </div>
 
+<!--
     <div class="row">
       
       <div class="col-md-4 col-lg-4">
@@ -262,7 +263,7 @@
   ></circle-progress>
       </div>
     </div>
-
+-->
 
 
 
