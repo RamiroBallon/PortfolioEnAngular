@@ -1,5 +1,5 @@
- <!--seccion navbar:BARRA DE TAREAS, bootstrap-->
- <section id="barra-de-navegacion">
+<!--seccion navbar:BARRA DE TAREAS, bootstrap-->
+<section id="barra-de-navegacion">
 
   <nav class="navbar navbar-expand-sm bg-light fixed-top">   <!--todo lo que pegue son estilos propios de boostrap no los tenemos en nuestra hoja de estilos-->
 
@@ -13,7 +13,7 @@
         <div class="navbar-redes collapse navbar-collapse justify-content-end ms-6 list-group list-group-horizontal" id="navbarSupportedContent">
           
           <div class="dropdown">
-            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-light dropdown-toggle" title="boton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
              
             </button>
             <ul class="dropdown-menu">
@@ -31,21 +31,27 @@
               <li class="list-group-item"><a href="https://github.com/RamiroBallon" title="github" target="_blank"><i class="fa-brands fa-github text-black btn btn-light"></i></a></li>
               <li class="list-group-item"><a href="https://codepen.io/" title="codepen" target="_blank"><i class="fa-brands fa-codepen text-black btn btn-light"></i></a></li>
         </ul>
-        <div class=" botones-login-logout">
+        <div class="botones-login-logout">
+
+          <div *ngIf="!modoEdit">
             <app-login></app-login>
-            <app-logout></app-logout>
+          </div>
+
+          <div>
+            <!--<app-logout></app-logout>-->
+            <button *ngIf="modoEdit" type="button" class="btn btn-light" title="logout" (click)="cerrarSesion()"> <!--debe coincidir con el id de los modales de abajo-->
+              <!--en lugar de INGRESAR le pongo un icono de candado para probar-->
+              <i class="fa-solid fa-lock"></i>
+            </button>
+          </div>
+
         </div>
         </div>          
         </div>
+
   </nav>
   
   </section>
 
 
- <app-modal-login></app-modal-login>
-
-
-
- 
-
- 
+<app-modal-login1></app-modal-login1>

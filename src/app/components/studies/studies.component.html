@@ -5,9 +5,12 @@
   <div class="row d1">
     <h2>Educacion</h2>
 
-    <div class="editar-agregar-educacion">
+    <div class="editar-agregar-educacion" *ngIf="modoEdit">
       <app-agregar-educacion></app-agregar-educacion>
       <app-editar-educacion></app-editar-educacion>
+      <button type="button" class="btn" (click)="delete(estudioSeleccionado)">
+        <i class="fa-solid fa-trash" title="borrar"></i>
+      </button>
     </div>
   </div>
 
@@ -15,22 +18,27 @@
 
 
     <div class="row n1" *ngFor="let estudio of estudios">
-
+      <!-- agregar un botón de selección junto a cada tarjeta de experiencia -->
+    <input *ngIf="modoEdit" type="radio" name="estudio" title="eliminar" [(ngModel)]="estudioSeleccionado" [value]="estudio.id"/>
+      
+      <!--imgen/logo de la institucion-->
       <div class="col-lg-3 col-md-3 imagen-estudio1">
         <img [src]="estudio.imagen" alt="" class="img-fluid">
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-8">
+      <!--titulo/especialidad e institucion-->
+      <div class="col-lg-6 col-md-6 col-sm-8 estudio-datos">
         <article>
           <ul>
-            <li><strong>{{estudio.titulo}}</strong></li>
-            <p>{{estudio.institucion}}</p>
+            <li><strong>{{estudio.titulo_especialidad}}</strong></li>
+            <li class="texto-institucion">{{estudio.institucion}}</li>
+            <li class="texto-descripcion">{{estudio.descripcion}}</li>
           </ul>
         </article>
     </div>
-
+     <!--periodo inicio-fin-->
     <div class="col-lg-3 col-md-3 col-sm-4 fecha">
       <article>
-          <p>{{estudio.inicio}} - {{estudio.fin}}</p>
+          <p>{{estudio.fecha_inicio}} - {{estudio.fecha_fin}}</p>
       </article>
   </div>
 

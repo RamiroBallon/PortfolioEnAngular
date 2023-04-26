@@ -1,0 +1,55 @@
+.contacto input {
+    padding-right: none;
+    background: transparent;
+    border: none;
+    width: 40%;
+    border-bottom: 2px solid rgba(255,255,255, 0.5);
+    resize: none;
+    margin-bottom: 1rem;
+}
+
+textarea{
+    color: none;
+    margin-bottom: -1.3rem;
+    padding-right: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255, 0.5);
+    resize: none;
+    position: relative;
+    top: 0.5rem;
+    width: 40%;
+    height: 100px;
+}
+
+button{
+    border: none;
+    border-radius: 4px;
+    color:gray;
+}
+
+button{
+    left: 1rem;
+}
+
+.contacto input ::placeholder{
+    color: white;
+}
+
+@media (max-width:800px){
+    .contacto input{
+        width: 70%;
+    }
+    textarea{
+        width: 70%;
+    }
+}
+
+
+.error{
+    color: rgb(243, 42, 42);
+}
+
+.border-danger{
+    border-color: red;
+}

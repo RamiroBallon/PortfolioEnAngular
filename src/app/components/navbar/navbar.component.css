@@ -32,6 +32,11 @@ u li{
 }
 
 
+.botones-login-logout{
+    display: flex;
+}
+
+
 
 
 

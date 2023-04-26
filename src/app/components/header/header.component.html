@@ -2,17 +2,17 @@
 
 <header>  
   <section id="sobremi">
-    <div class="container-fluid" *ngFor="let sobre of sobremis">
+    <div class="container-fluid" *ngFor="let persona of personas">
       <div class="row">
 
         <div class="banner col-sm-12">
           <img
-            [src]="sobre.imagenBanner"
+            [src]="persona.imagen_banner"
             alt="custom-banner"
             class="img-fluid"
           />
-          <div class="banner-bienvenido" *ngFor="let sobre of sobremis"> 
-            <h2 class="bienvenido-typing">{{sobre.tituloBienvenido}}</h2>
+          <div class="banner-bienvenido" *ngFor="let persona of personas"> 
+            <h2 class="bienvenido-typing">{{persona.titulo_banner}}</h2>
           </div>
         </div>
         
@@ -20,8 +20,8 @@
     </div>
 
 
-    <div class="container-fluid" *ngFor="let sobre of sobremis">
- 
+    <div class="container-fluid" *ngFor="let persona of personas">
+
 <div class="sobre-mi">
 
       <div class=" sobre-mi-fila row">
@@ -32,19 +32,20 @@
 
           <div class="imagen-de-perfi">
             <!--foto de perfil-->
-            <a [href]="sobre.link" target="_blank">
+            <a [href]="persona.link_foto_perfil" target="">
               <!--a es para redirigir a paginas-->
-              <img [src]="sobre.fotoPerfil" class="img-fluid position-absolute translate-middle" alt="muestra-texto-en-caso-de-no-haber-imagen" title="Ramiro Ballon Rios"
+              <img [src]="persona.foto_perfil" class="img-fluid position-absolute translate-middle" alt="muestra-texto-en-caso-de-no-haber-imagen" title="Ramiro Ballon Rios"
               />
             </a>
           </div>
+          
 
           <!--nombre-->
-          <h1 class="nombrePerfil">{{sobre.nombre}}<span class="apellido">{{sobre.apellido}}</span> <!--span es un elemento neutro-->
+          <h1 class="nombrePerfil">{{persona.nombre}}<span class="apellido">{{persona.apellido}}</span> <!--span es un elemento neutro-->
           </h1>
           <!--especialidad-->
           <div class="especialidad text-white">
-            <h4><b>{{sobre.tituloEspecialidad}}</b></h4>
+            <h4><b>{{persona.titulo_especialidad}}</b></h4>
           </div>
         </div>
 
@@ -53,14 +54,14 @@
         <div class="col-lg-7 col-md-6 columna2">
           
             <div class="titulo">
-              <h2 class="mt-0 pb-0">{{sobre.tituloSobremi}}</h2>
+              <h2 class="mt-0 pb-0">Sobre mi</h2>
             </div>
             
             <div class="parrafo-descripcion">
             <p>
-              {{sobre.descripcion}}
+              {{persona.descripcion_1_sobre_mi}}
               <!-- <br />Con conocimientos en Backend y Base de datos. -->
-              <br />{{sobre.descripcion1}}
+              <br />{{persona.descripcion_2_sobre_mi}}
             </p>
           </div>
 
@@ -74,9 +75,12 @@
     </div>
   </section>
 
-  <div class="editar-sobreMi">
+  <div *ngIf="modoEdit" class="editar-sobreMi">
+    
     <app-editar-sobremi></app-editar-sobremi>
+    
   </div>
+
 
 </header>
 

@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { RouterOutlet } from '@angular/router';
 
@@ -28,6 +29,10 @@ import { EditarProyectosComponent } from './modales/editar-proyectos/editar-proy
 import { AgregarProyectosComponent } from './modales/editar-proyectos/agregar-proyectos/agregar-proyectos.component';
 import { EditarSobremiComponent } from './modales/editar-sobremi/editar-sobremi.component';
 import { Error404Component } from './components/error404/error404.component';
+import { FormularioContactoComponent } from './components/footer/formulario-contacto/formulario-contacto.component';
+import { PersonaService } from './services/persona.service';
+import { InterceptorService } from './services/interceptor.service';
+import { ModalLogin1Component } from './modales/modal-login1/modal-login1.component';
 
 
 
@@ -56,6 +61,8 @@ import { Error404Component } from './components/error404/error404.component';
     AgregarProyectosComponent,
     EditarSobremiComponent,
     Error404Component,
+    FormularioContactoComponent,
+    ModalLogin1Component,
   ],
 
   imports: [
@@ -63,9 +70,12 @@ import { Error404Component } from './components/error404/error404.component';
     AppRoutingModule,
     RouterOutlet,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    BrowserModule, 
+    FormsModule, 
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [PersonaService, { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi:true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,10 +1,133 @@
 <!-- Button trigger modal(cuadro de dialogo) --> <!--boton disparador cuadro de dialogo-->
-<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal"> <!--debe coincidir con el id de los modales de abajo-->
+<!--<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal"> --> <!--debe coincidir con el id de los modales de abajo-->
     <!--en lugar de INGRESAR le pongo un icono de candado para probar-->
-    <i class="fa-solid fa-lock-open"></i>
+    <!-- <i class="fa-solid fa-lock-open"></i> -->
+ <!--  Login
 
+</button>
+-->
+
+<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">
+  <!-- <i class="fa-solid fa-lock-open"></i> -->
+  Login
 </button>
 
 
 
+<!-- <div class="containerLog"> -->
 
+  <!-- <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+
+    <form (ngSubmit)="onEnviar($event)" [formGroup]="form" >
+          
+                <div class="modal-body">
+                  
+                  email
+                  <div class="mb-3">
+                    <label for="staticEmail" class="form-label">Email</label>
+                    <input type="email" pattern="[^ @]*@[^ @]*" formControlName="email" class="form-control-plaintext" [(ngModel)]="persona.email"
+                       [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched}" id="staticEmail" value="email@example.com">
+                  </div>
+
+                       <div *ngIf="Email?.errors && Email?.touched">
+                        <p *ngIf="Email?.hasError('required')" class="error">
+                          Ingrese email.
+                        </p>
+                        <p *ngIf="Email?.hasError('email')" class="text-danger">
+                          Ingrese email valido.
+                        </p>
+                    </div>
+                    
+                  contraseña
+                  <div class="mb-3">
+                    <label for="inputPassword" class="form-label"> Contraseña: </label>
+                    <input type="password" formControlName="clave" class="form-control" [(ngModel)]="persona.clave"
+                        [ngClass]="{'is-invalid': Clave?.errors && Clave?.touched, 'is-valid': !Clave?.errors && Clave?.touched}" id="inputPassword">
+                  </div>
+
+                        ngIf validaciones
+                        <div *ngIf="Clave?.errors && Clave?.touched">
+                          <p *ngIf="Clave?.hasError('required')" class="error">
+                            La contraseña es requerida.
+                          </p>
+                          <p *ngIf="Clave?.hasError('min')" class="text-danger">
+                            La contraseña debe tener 8 caracteres.
+                          </p>
+                        </div>
+
+                <div class="modal-footer botonDeLogin+">
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+              </div> 
+        </form>
+      </div>
+    </div>
+  </div> -->
+
+
+      <!-- </div>   -->
+
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      

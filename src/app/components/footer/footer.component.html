@@ -11,28 +11,10 @@
       <h3>Contacto</h3>
       <br />
 
-      <div class="col-sm-12">
-        <!--salto de linea-->
-        <div class="contacto">
-         
-          <!--es una etiqueta para el imput-->
-          <input type="text" placeholder="Nombre" class="text-white"/>
-          <!-- input es para escribir en la pagina-->
-          <br />
-          
-          <!--es una etiqueta para el imput-->
-          <input type="text" placeholder="Email" class="text-white" />
-          <!-- input es para escribir en la pagina-->
-</div>
+      <!--formulario de contacto-->
+      <app-formulario-contacto></app-formulario-contacto>
 
-<div class="inputBox">
-          
-          <!--es una etiqueta para el imput-->
-          <textarea class="form-control-sm text-white" required="required" name="message" placeholder="Escriba su mensaje aqui..."></textarea>
-    
-          <button type="submit" name="sendForm" class="btn btn-light">enviar</button>
-        </div>
-      </div>
+     
     </div>
   </div>
 </div>
@@ -46,23 +28,23 @@
 </section>
 
 <footer id="footerContactos">
-  <article class="telefono-contacto">
+  <article class="telefono_mail" *ngFor="let contacto of contactos">
     <ul>
       <li>
-        <i class="fas fa-mobile-alt" aria-hidden="true"> </i> (+54) 11 12345678
+        <i class="fas fa-mobile-alt" aria-hidden="true"> </i> {{contacto.celular}}
       </li>
       <li>
-        <i class="fas fa-envelope" aria-hidden="true"></i> ramiroballonrios@gmail.com
+        <i class="fas fa-envelope" aria-hidden="true"></i> {{contacto.email}}
       </li>
     </ul>
   </article>
-  <aside class="redes-contacto" >
+  <aside class="redes-contacto">
     <ul>
-      <li *ngFor="let red of redes">
-        <a [href]="red.link" title="{{red.title}}" target="_blank"><i class="{{red.logoRedSocial}}"></i></a>
+      <li *ngFor="let redSocial of redesSociales">
+        <a [href]="redSocial.link" title="{{redSocial.title}}" target="_blank"><i class="{{redSocial.logo}}"></i></a>
       </li>
+      
       <!--fab fa: de fontawesome-->
-     
       <!--
       <li>
         <a href="https://www.instagram.com" title="Instagram" target="_blank"
@@ -90,14 +72,14 @@
         <div class="col-sm">
 
     <p class="creditos-datos">
-      Ramiro Ballon Rios - programador full stack junior
+      Ramiro Ballon Rios - Full Stack Developer Jr.
     </p>
     <p class="creditos-copyright">
-      ©2022 -
-      <span class="creditos"><a
-          href="https://argentinaprograma.inti.gob.ar"
-          title="Argentina programa 2022"
-          target="_blank">Argentina programa 2022</a></span>
+      ©2023 -
+      <span class="creditos">Diseñado por <a
+          href=""
+          title="Ramiro Ballon"
+          target="">Ramiro Ballon</a></span>
     </p>
 
         </div>

@@ -23,7 +23,7 @@ header{
 .editar-sobreMi{  
     position: absolute;
     right: 1rem;
-    bottom: 1rem;
+    top: 70px;
 }
 
 
@@ -108,7 +108,7 @@ color: black;
     float: left;
     padding-top: 0%;
     border-radius: 50%;
-    border: 1px double rgba(137, 133, 133, 0.731);
+    border: 2px double rgba(137, 133, 133, 0.731);
     /**box-shadow: 0 0 0 8px rgba(0, 0, 0, .06); **/
 
     top:0px;
@@ -145,7 +145,7 @@ padding-bottom: 5rem;
 }
 
 .especialidad h4{
-    font-size: 26px;
+    font-size: 29px;
     font-style: italic;
 }
 
@@ -216,7 +216,7 @@ header{
 
 .bienvenido-typing{
     animation: animacion 2.5s steps(35), transparent .5s step-end infinite alternate;
-    width: 16em;
+    width: 20em;
     white-space: nowrap;
     overflow: hidden;
     color: white;
@@ -238,7 +238,7 @@ header{
 
 @media (max-width:450px){
     .banner h2, .banner-bienvenido h2{
-        font-size: 140%;
+        font-size: 120%;
     }
 }
 

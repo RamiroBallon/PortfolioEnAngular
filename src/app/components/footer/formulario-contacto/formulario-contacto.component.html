@@ -1,0 +1,44 @@
+<form [formGroup]="form" (ngSubmit)="funcionContactar($event)">
+    <div class="col-sm-12">
+      <!--salto de linea-->
+      <div class="contacto">
+       
+        <!--es una etiqueta para el input-->
+        <input type="text" placeholder="Nombre" class="text-white" formControlName="nombre" [class.border-danger]="NombreValid"/>
+        <!-- input es para escribir en la pagina-->
+        <br />
+        <div *ngIf="Nombre?.errors  && Nombre?.touched">     <!--los ngIf solo muestran el texto si cumple la condicion-->
+            <p *ngIf="Nombre?.hasError('required')" class="error">
+                El campo es requerido.
+            </p>
+          </div>
+        
+        <!--es una etiqueta para el input-->
+        <input type="text" placeholder="Email" class="text-white" formControlName="email" [class.border-danger]="EmailValid"/>
+        <!-- input es para escribir en la pagina-->
+      </div>
+      <div *ngIf="Email?.errors  && Email?.touched">     <!--los ngIf solo muestran el texto si cumple la condicion-->
+        <p *ngIf="Email?.hasError('required')" class="error">
+            El campo es requerido.
+        </p>
+        <p *ngIf="Email?.hasError('email')" class="error">
+          El formato del email debe ser válido.
+        </p>
+      </div>
+
+      
+        
+        <!--es una etiqueta para el input-->
+        <textarea class="form-control-sm text-white" required="required" name="message" placeholder="Escriba su mensaje aqui..." formControlName="mensaje" [class.border-danger]="MensajeValid"></textarea>
+        <div *ngIf="Mensaje?.errors  && Mensaje?.touched">     <!--los ngIf solo muestran el texto si cumple la condicion-->
+            <p *ngIf="Mensaje?.hasError('required')" class="error">
+                El campo es requerido.
+            </p>
+          </div>
+
+          <div class="btn">
+        <button type="submit" name="sendForm" class="btn btn-light">enviar</button>
+        </div>
+    
+    </div>
+  </form>

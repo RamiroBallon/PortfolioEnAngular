@@ -7,9 +7,12 @@
     <div class="row titulo">
       <h2>Hard and Soft Skills</h2> <!--Habilidades-->
       <br>
-    <div class="editar-skills">
+    <div *ngIf="modoEdit" class="editar-skills">
       <app-agregar-skills></app-agregar-skills>
       <app-editar-skills></app-editar-skills>
+      <button type="button" class="btn" (click)="delete(skillSeleccionada)">
+        <i class="fa-solid fa-trash" title="borrar"></i>
+      </button>
     </div>
   </div>
 
@@ -18,7 +21,8 @@
       
       <!--el valor de percent por ahora lo dejamos asi, despues tiene que tomar de base de datos se-->
 
-      <div class="col-md-4 col-lg-4" *ngFor="let skill of habilidades">
+      <div class="col-md-4 col-lg-4" *ngFor="let skill of skills">
+        <input *ngIf="modoEdit" type="radio" name="skill" title="eliminar" [(ngModel)]="skillSeleccionada" [value]="skill.id" />
         <circle-progress class="imagen-skill"
         [percent]="skill.porcentaje"
         [radius]="100"

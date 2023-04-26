@@ -1,12 +1,12 @@
   <!--MODAL AGREGAR EXPERIENCIA-->
   <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-agregar-experiencia"> <!--debe coincidir con el id de los modales de abajo-->
-    <i class="fa-sharp fa-solid fa-plus"></i>
+    <i class="fa-sharp fa-solid fa-plus" title="agregar"></i>
   </button>
 
 
 <!--MODALES--> <!--cuadro de dialogo--> 
     <!-- Modal Agregar --> <!-- el id="" estaremos llamando desde nuestro trigger o disparador con nuestro boton que tenemos-->
-    <div class="modal fade" id="modal-agregar-experiencia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal-agregar-experiencia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
       <div class="modal-dialog">
         <div class="modal-content">
           
@@ -15,56 +15,89 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton X de arriba a la derecha del modal-->
           </div>
 
+          <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
           <div class="modal-body"> <!--cuerpo de modal-->
-          
-            <form>
+        
 
-              <select class="form-select" id="experienciaId">
-                <option selected>Seleccionar Experiencia</option>
-                <option value="1">ID1</option>
-                <option value="2">ID2</option>
-                <option value="3">ID3</option>
-              </select>
-
-              <div class="mb-3"> <!--Titulo-->
-                <label for="Titulo" class="form-label">Titulo</label>
-                <input class="form-control" type="text" id="Titulo">
+              <div class="mb-3"> <!--Nombre_empresa - NOMBRE DE EMPRESA-->
+                <label for="nombre_empresa" class="form-label">Titulo/Empresa</label>
+                <input class="form-control" type="text" [class.border-danger]="Nombre_empresaValid" placeholder="Ingrese el nombre de la empresa" 
+                id="nombre_empresa" formControlName="nombre_empresa" [(ngModel)]="nombre_empresa"> <!--ngModel para meter a la base de datos, responde al modelo a la entidad. formControlName para validaciones, borrar y todos los campos-->
+              </div>
+              <div *ngIf="Nombre_empresa?.errors && Nombre_empresa?.touched">     <!--los ngIf solo muestran el texto si cumple la condicion-->
+                <p *ngIf="Nombre_empresa?.hasError('required')" class="error">
+                    El campo es requerido.
+                </p>
               </div>
 
-            
-              <div class="mb-3"> <!--experiencia Url-->
-                <label for="experienciaUrl" class="form-label">Modificar Url</label>
-                <input class="form-control" type="url" id="experienciaUrl">
+              <div class="mb-3"> <!--PUESTO-->
+                <label for="Puesto" class="form-label">Puesto</label> <!--LABEL ES ETIQUETA-->
+                <input class="form-control" [class.border-danger]="PuestoValid" id="Puesto" formControlName="descripcion" [(ngModel)]="puesto"> <!--textarea es una entrada de texto largo-->
+              </div>
+              <div *ngIf="Puesto?.errors  && Puesto?.touched">     <!--los ngIf solo muestran el texto si cumple la condicion-->
+                <p *ngIf="Puesto?.hasError('required')" class="error">
+                    El campo es requerido.
+                </p>
+              </div>+
+
+              <div class="mb-3"> <!--Experiencia Img - LOGO-->
+                <label for="experienciaImg" class="form-label">Agregar logo</label>
+                <input class="form-control" type="url" [class.border-danger]="LogoValid" id="experienciaImg" formControlName="logo" [(ngModel)]="logo">
+              </div>
+              <div *ngIf="Logo?.errors  && Logo?.touched">     <!--los ngIf solo muestran el texto si cumple la condicion-->
+                <p *ngIf="Logo?.hasError('required')" class="error">
+                    El campo es requerido.
+                </p>
               </div>
 
-              <div class="mb-3"> <!--Experiencia Img-->
-                <label for="experienciaImg" class="form-label">Modificar logo</label>
-                <input class="form-control" type="file" id="experienciaImg">
+              <div class="mb-3"> <!--experiencia Url - LINK-->
+                <label for="experienciaUrl" class="form-label">Agregar Url (opcional)</label>
+                <input class="form-control" type="url" id="experienciaUrl" formControlName="link" [(ngModel)]="link">
+              </div>
+              <div *ngIf="Link?.errors  && Link?.touched">     <!--los ngIf solo muestran el texto si cumple la condicion-->
+                <p *ngIf="Link?.hasError('required')" class="error">
+                    El campo es requerido.
+                </p>
+              </div>
+              
+              <div class="mb-3"> <!--FECHA DE INICIO-->
+                <label for="PeriodoInicio" class="form-label">Agregar Peridodo Inicio</label>
+                <input type="" class="form-control" [class.border-danger]="Fecha_inicioValid"  id="PeriodoInicio" formControlName="fecha_inicio" [(ngModel)]="fecha_inicio">
+              </div>
+              <div *ngIf="Fecha_inicio?.errors  && Fecha_inicio?.touched">     <!--los ngIf solo muestran el texto si cumple la condicion-->
+                <p *ngIf="Fecha_inicio?.hasError('required')" class="error">
+                    El campo es requerido.
+                </p>
               </div>
 
-
-              <div class="mb-3"> <!--fecha de inicio-->
-                <label for="PeriodoInicio" class="form-label">Modificar Peridodo Inicio</label>
-                <input type="date" class="form-control" id="PeriodoInicio">
+              <div class="mb-3"> <!--FECHA DE FIN-->
+                <label for="PeriodoFin" class="form-label">Agregar Peridodo Fin</label>
+                <input type="" class="form-control" [class.border-danger]="Fecha_finValid" id="PeriodoFin" formControlName="fecha_fin" [(ngModel)]="fecha_fin">
               </div>
-
-              <div class="mb-3"> <!--fecha de fin-->
-                <label for="PeriodoFin" class="form-label">Modificar Peridodo Fin</label>
-                <input type="date" class="form-control" id="PeriodoFin">
+              <div *ngIf="Fecha_fin?.errors  && Fecha_fin?.touched">     <!--los ngIf solo muestran el texto si cumple la condicion-->
+                <p *ngIf="Fecha_fin?.hasError('required')" class="error">
+                    El campo es requerido.
+                </p>
               </div>
   
   
-              <div class="mb-3"> <!--descripcion-->
+              <div class="mb-3"> <!--DESCRIPCION-->
                 <label for="Descripcion" class="form-label">Descripcion</label> <!--LABEL ES ETIQUETA-->
-                <textarea class="form-control" id="Descripcion"> </textarea> <!--textarea es una entrada de texto largo-->
+                <textarea class="form-control" [class.border-danger]="DescripcionValid" id="Descripcion" formControlName="descripcion" [(ngModel)]="descripcion"> </textarea> <!--textarea es una entrada de texto largo-->
               </div>
-  
+              <div *ngIf="Descripcion?.errors  && Descripcion?.touched">     <!--los ngIf solo muestran el texto si cumple la condicion-->
+                <p *ngIf="Descripcion?.hasError('required')" class="error">
+                    El campo es requerido.
+                </p>
+              </div>
+
+            </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button> <!--cerrar-->
-            <button type="submit" class="btn btn-primary">Ingresar</button> <!--ingresar-->
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="limpiar()">Cerrar</button> <!--cerrar-->
+            <button type="submit" class="btn btn-primary">Agregar</button> <!--ingresar-->
           </div>
-        </form>
-      </div>
+        
+      </form>
         </div>
       </div>
     </div>

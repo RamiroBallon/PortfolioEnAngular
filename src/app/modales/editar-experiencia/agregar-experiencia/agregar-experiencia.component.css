@@ -1,3 +1,11 @@
 *{
     color: black;
 }
+
+.error{
+    color: red
+}
+
+.border-danger{
+    border-color: red;
+}

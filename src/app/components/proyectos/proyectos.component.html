@@ -5,73 +5,38 @@
 
     <div class="row titulo-proyectos">
       <h2>Proyectos</h2>
-      <div class="editar-proyectos">
+      <div class="editar-proyectos" *ngFor="let proyecto of proyectos">
+        <div *ngIf="modoEdit">
         <app-agregar-proyectos></app-agregar-proyectos>
         <app-editar-proyectos></app-editar-proyectos>
+        <button type="button" class="btn" (click)="delete(proyectoSeleccionado)">
+          <i class="fa-solid fa-trash" title="borrar"></i>
+        </button>
+      </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-sm-12">
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 descripcion-proyectos">
       
-      <div class="col columnita" *ngFor="let project of projects">
+      <div class="col columnita" *ngFor="let proyecto of proyectos">
         <div class="card">
-          <a [href]="project.link" target="_blank">
-          <img [src]="project.imagen" class="card-img-top" alt="..." class="img-fluid card-img imagen-proyecto">
+          <input *ngIf="modoEdit" type="radio" name="experiencia" title="eliminar" [(ngModel)]="proyectoSeleccionado" [value]="proyecto.id" />
+          <a [href]="proyecto.link" target="_blank">
+          <img [src]="proyecto.imagen" class="card-img-top" alt="..." class="img-fluid card-img imagen-proyecto">
           </a>
           <div class="card-body">
-            <h5 class="card-title">{{project.titulo}}</h5>
-            <p class="card-text descripcion-proyecto">{{project.descripcionParrafo1}}</p>
-            <p class="card-text descripcion-proyecto">{{project.descripcionParrafo2}}</p>
-            <p class="card-text descripcion-proyecto">{{project.descripcionParrafo3}}</p>
-            <p class="card-text descripcion-proyecto">{{project.descripcionParrafo4}}</p>
+            <h5 class="card-title">{{proyecto.titulo}}</h5>
+            <p class="card-text descripcion-proyecto">{{proyecto.descripcion}}</p>
           </div>
           </div>
-      </div>
-
-
-
-<!--
-      <div class="col-md-3">
-        <div class="card">
-          <a href="" target="_blank">
-          <img src="https://picsum.photos/500" class="card-img-top" alt="...">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Proyecto 2</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="card">
-          <a href="" target="_blank">
-          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Proyecto 3</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="card">
-          <a href="" target="_blank">
-          <img src="https://picsum.photos/450" class="card-img-top" alt="...">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Proyecto 4</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          </div>
-      </div>
-
-      -->
-
-      
+      </div>      
     </div>
    
+    </div>
+    </div>
   </div>
 </section>
 

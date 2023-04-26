@@ -44,6 +44,7 @@ ul li{   /*buscamos donde estan las redes y quitamos los puntito*/
     padding-bottom: 0rem;
 }
 
+/*distancia entre cada estudio*/
 .n1{
     padding-bottom: 3rem;
 }
@@ -53,25 +54,37 @@ ul li{   /*buscamos donde estan las redes y quitamos los puntito*/
    padding-left: 2.8rem;
 }
 
-/*li=titulos*/
+/*titulo/especialidad*/
 li{
     font-size: 25px;
 }
 
-/*p=Instituciones*/
-p{
-    font-size: 18px;
+/*institucion*/
+.texto-institucion{
+    font-size: 20px;
+}
+
+.texto-descripcion{
+    font-size: 16px;
+    padding-top: 10px;
+    max-width: 500px;
+    
 }
 
 .d1{
     padding-top: 3rem;
 }
 
+.fecha p {
+    font-size: 18px;
+}
+
 /**.imagen-estudio1{
     filter: invert();
 }  **/
 
-.descripcion{
-    font-size: 15px;
-    text-align: justify;
+
+/*para que el contenido respete su contenedor*/
+.estudio-datos{ 
+    word-wrap: break-word;
 }

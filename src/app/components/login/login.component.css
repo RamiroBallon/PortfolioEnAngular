@@ -1,0 +1,15 @@
+button {
+    border-color: black;
+    background-color: black;
+    color: white;
+    margin-right: 2px;
+}
+
+button:hover{
+    color: green;
+}
+
+
+.botonDeLogin {
+    background-color: black;
+}

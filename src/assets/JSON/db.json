@@ -8,16 +8,16 @@
     "sobremi": [
         {
             "id":1,
-            "tituloBienvenido": "Hola, bienvenido a mi portfolio",
-            "imagenBanner":"../assets/img/BANNER2-8.png",
             "nombre": "Ramiro",
             "apellido": "Ballon Rios",
+            "fotoPerfil":"../assets/img/myAvatar (2).png",
+            "link":"",
             "tituloEspecialidad": "Full Stack Developer Jr.",
-            "fotoPerfil":"../assets/img/img-perfil-ejemplo1.png",
-            "link":"https://github.com/RamiroBallon",
-            "tituloSobremi": "SOBRE MI",
             "descripcion": "Soy un developer especializado en el desarrollo de aplicaciones web del lado del cliente (Front-end)",
             "descripcion1":"Continuamente aprendiendo y adquiriendo nuevas habilidades tecnológicas en el campo del diseño y desarrollo de aplicaciones web en general.",
+            "imagenBanner":"../assets/img/BANNER2-8.png",
+            "tituloBienvenido": "Hola, bienvenido a mi portfolio web",
+            "tituloSobremi": "SOBRE MI",
             "edad": 22
         }
     ],
@@ -78,7 +78,7 @@
     {
         "id":1,
         "logo": "../assets/img/HTML5_logo.png",
-        "porcentaje": 95   
+        "porcentaje": 95
     },
     {
         "id":2,
@@ -96,7 +96,7 @@
         "porcentaje": 90   
     },
     {
-        "id":8,
+        "id":5,
         "logo": "../assets/img/JAVA_logo.png",
         "porcentaje": 30  
     },
@@ -112,13 +112,13 @@
     },
      
     {
-        "id":10,
+        "id":8,
         "logo": "../assets/img/TEAMWORK_logo5.png",
         "porcentaje": 100   
     },
    
     {
-        "id":12,
+        "id":9,
         "logo": "../assets/img/SPEAKENGLISH_logo.png",
         "porcentaje": 55  
     }
@@ -131,7 +131,7 @@
         "institucion": "Argentina Programa - INTI - CESSI",
         "inicio": 2022,
         "fin": 2023,
-        "descripcion": "lorem",
+        "descripcion": "",
         "imagen": "../assets/img/arg-prog.png"
     },
     {
@@ -140,7 +140,7 @@
         "institucion": "Facultad de Arquitectura, Diseño y Urbanismo - UBA",
         "inicio": 2019,
         "fin": "actualidad",
-        "descripcion": "lorem",
+        "descripcion": "",
         "imagen": "../assets/img/ESTUDIOS-UBA.png"
     },
     {
@@ -149,7 +149,7 @@
         "institucion": "Escuela tecnica n°7 - Dolores Lavalle De Lavalle",
         "inicio": 2013,
         "fin": 2018,
-        "descripcion": "lorem",
+        "descripcion": "",
         "imagen": "../assets/img/ESTUDIOS-ET7-1.png"
     }
 ],
@@ -221,6 +221,14 @@
         "logoRedSocial":"fab fa-pinterest-square",
         "link":"https://ar.pinterest.com",
         "title":"Pinterest"
+    }
+],
+
+"telefono_mail": [
+    {
+        "id":1,
+        "celular":"+(54) 11 34567898",
+        "mail":"ramiroballonrios@gmail.com"
     }
 ]
 

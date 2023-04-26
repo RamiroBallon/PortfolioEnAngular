@@ -8,6 +8,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    text-align: left !important;
 }
 
 .row div{
@@ -15,7 +16,7 @@
 }
 
 .row{
-    align-items: center;
+    /* align-items: center; */ /*lo centra verticalmente*/
     justify-content: center;
     padding-bottom: 3rem;
 }
